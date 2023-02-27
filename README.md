@@ -1,0 +1,6 @@
+# Python-Flask-Web-App
+
+This web app features 3 pages and analyzes data about the Twitter stock from 2019 to 2022 (data downloaded from: https://www.kaggle.com/datasets/whenamancodes/twitter-stock-market-analysis-founding-years?resource=download). The home page features links to the browse and donate pages, as well as a subscribe button. The home page also features 3 pyplot graphs representing the Twitter stock.
+On the Browse page, users can find the Twitter stock data represented as an HTML table. This page is also available in JSON format and features a rate limiting function to not allow more than one request per minute from one IP address.
+The home page also features an A/B test, where 2 different versions are dislplayed alternatively the first 10 times the website is visited. After those first 10 visits, the home page will remain the version that had the most clicks to the Donate page.
+The subscribe button allows for users to input their email address into an HTML input box to receive updates about the website. The flask app checks if the inputted email is valid and will return either a thank you message with their subscriber number, or an invalid email message prompting them to try again.
